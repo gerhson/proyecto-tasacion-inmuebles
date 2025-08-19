@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasación Lima & Callao</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tasación de Inmuebles</h1>
+    <p>Selecciona distrito, zona e ingresa el área (m²):</p>
+    <div class="form-group">
+      <label for="ubigeo">Ubigeo:</label>
+      <select id="ubigeo">
+        <option value="">Elige Lima o Callao</option>
+        <option value="Lima">Lima</option>
+        <option value="Callao">Callao</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="distrito">Distrito:</label>
+      <select id="distrito">
+        <option value="">Primero selecciona Lima o Callao</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="zona">Zona:</label>
+      <select id="zona">
+        <option value="">Primero selecciona distrito</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="area">Área (m²):</label>
+      <input type="number" id="area" placeholder="Ej: 100" />
+    </div>
+    <div class="form-group">
+      <button id="btnCalcular">Calcular Valor</button>
+    </div>
+    <div id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
